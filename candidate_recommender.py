@@ -20,6 +20,12 @@ st.set_page_config(
     page_icon="🧑‍💼"
 )
 
+try:
+    st.success("Streamlit is running properly! 🎉")
+except Exception as e:
+    st.error(f"Something went wrong: {e}")
+
+
 # Initialize session state
 if 'api_key' not in st.session_state:
     st.session_state.api_key = None
