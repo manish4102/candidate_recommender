@@ -11,6 +11,8 @@ import os
 import re
 from typing import Dict, Any, List, Optional
 
+st.title("Candidate Recommendation System")
+
 # Set page config at the very beginning (must be first Streamlit command)
 st.set_page_config(
     page_title="Candidate Recommendation Engine", 
